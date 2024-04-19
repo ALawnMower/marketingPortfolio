@@ -1,51 +1,109 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Alan's Marketing Portfolio</title>
     <style>
+        body {
+            font-family: sans-serif;
+            background-color: #c4bebe;
+            margin: 0;
+        }
+
+        .wrapper {
+            width: 85%;
+            margin: 0 auto;
+        }
+
+        .container {
+            text-align: center;
+        }
+
+        h2 {
+            text-decoration: underline;
+            color: black;
+            font-size: 30px;
+        }
+
+        .header {
+            background-color: #ad2b21;
+            text-align: center;
+            padding: 1px;
+        }
+
+        .header h1 {
+            font-size: 36px;
+        }
+
         .flex-container {
             display: flex;
             justify-content: space-around;
+            margin-bottom: 20px;
         }
+
         .image-container {
             flex: 50%;
             padding: 0;
         }
+
         .centered {
             text-align: center;
         }
+
         .swim-image {
             width: 49%;
         }
+
+        footer {
+            background-color: #7b7778;
+            color: #c4bebe;
+            height: 50px;
+        }
+
+        footer.centered {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 1px;
+        }
     </style>
 </head>
+
 <body>
 
-<div class="container">
-    <h1>Alan's Marketing Portfolio</h1>
+    <div class="header">
+        <h1>Alan's Marketing Portfolio</h1>
+    </div>
 
-    <h2>Graphics</h2>
-    <div class="flex-container">
-        <div class="image-container">
-            <img src="media/flyer.png" alt="ACM Club Flyer" style="width: 90%;">
+    <div class="wrapper">
+        <div class="container">
+            <h2>Graphics</h2>
+            <div class="flex-container">
+                <div class="image-container">
+                    <img src="media/flyer.png" alt="ACM Club Flyer" style="width: 90%;">
+                </div>
+                <div class="image-container">
+                    <img src="media/moon.jpg" alt="Moon Magazine" style="width: 90%;">
+                </div>
+            </div>
+
+            <h2>Swim Photos</h2>
+            <div class="centered">
+                <img src="media/jadeSwim.jpg" alt="Jade Swimming" class="swim-image">
+            </div>
+            <div class="centered", style="margin-bottom: 25px;">
+                <img src="media/noahSwim.jpg" alt="Noah Swimming" class="swim-image">
+                <img src="media/rachelSwim.jpg" alt="Rachel Swimming" class="swim-image">
+            </div>
         </div>
-        <div class="image-container">
-            <img src="media/moon.jpg" alt="Moon Magazine" style="width: 90%;">
-        </div>
     </div>
 
-    <h2>Swim Photos</h2>
-    <div class="centered">
-        <img src="media/jadeSwim.jpg" alt="Jade Swimming" class="swim-image">
-    </div>
-    <div class="centered">
-        <img src="media/noahSwim.jpg" alt="Noah Swimming" class="swim-image">
-        <img src="media/rachelSwim.jpg" alt="Rachel Swimming" class="swim-image">
-    </div>
-
-</div>
+    <footer class="centered">
+        Alan Mo UUCS Marketing Portfolio 2024
+    </footer>
 
 </body>
+
 </html>
