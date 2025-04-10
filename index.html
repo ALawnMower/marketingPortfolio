@@ -13,60 +13,51 @@
         }
 
         .wrapper {
-            width: 85%;
+            width: 80%;
             margin: 0 auto;
-        }
-
-        .container {
             text-align: center;
-        }
-
-        h2 {
-            text-decoration: underline;
-            color: black;
-            font-size: 30px;
         }
 
         .header {
             background-color: #ad2b21;
-            text-align: center;
-            padding: 1px;
+            padding: 20px 0;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 120px;
         }
 
         .header h1 {
             font-size: 36px;
+            color: white;
+            margin: 0;
         }
 
-        .flex-container {
+        .nav-links {
             display: flex;
-            justify-content: space-around;
-            margin-bottom: 20px;
+            justify-content: center;
+            gap: 30px;
+            margin-top: 20px;
         }
 
-        .image-container {
-            flex: 50%;
-            padding: 0;
+        .nav-links a {
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
         }
 
-        .centered {
-            text-align: center;
-        }
-
-        .swim-image {
-            width: 49%;
+        .nav-links a:hover {
+            text-decoration: underline;
         }
 
         footer {
             background-color: #7b7778;
             color: #c4bebe;
             height: 50px;
-        }
-
-        footer.centered {
             display: flex;
             justify-content: center;
             align-items: center;
-            padding: 1px;
         }
     </style>
 </head>
@@ -74,34 +65,18 @@
 <body>
 
     <div class="header">
-        <h1>Alan's Marketing Portfolio</h1>
-    </div>
-
-    <div class="wrapper">
-        <div class="container">
-            <h2>Graphics</h2>
-            <div class="flex-container">
-                <div class="image-container">
-                    <img src="media/flyer.png" alt="ACM Club Flyer" style="width: 90%;">
-                </div>
-                <div class="image-container">
-                    <img src="media/moon.jpg" alt="Moon Magazine" style="width: 90%;">
-                </div>
-            </div>
-
-            <h2>Swim Photos</h2>
-            <div class="centered">
-                <img src="media/jadeSwim.jpg" alt="Jade Swimming" class="swim-image">
-            </div>
-            <div class="centered", style="margin-bottom: 25px;">
-                <img src="media/noahSwim.jpg" alt="Noah Swimming" class="swim-image">
-                <img src="media/rachelSwim.jpg" alt="Rachel Swimming" class="swim-image">
-            </div>
+        <h1>Alan's Marketing Portfolio - Home</h1>
+        <div class="nav-links">
+            <a href="graphics.html">Graphics</a>
+            <a href="photos.html">Photos</a>
         </div>
     </div>
 
-    <footer class="centered">
-        Alan Mo UUCS Marketing Portfolio 2024
+    <div class="wrapper">
+    </div>
+
+    <footer>
+        UUCS Marketing Portfolio 2025
     </footer>
 
 </body>
